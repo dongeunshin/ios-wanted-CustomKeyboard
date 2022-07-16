@@ -70,13 +70,6 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		7C07353528804A59003E5B18 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		7C07353628804A5F003E5B18 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +103,14 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		7C16429F2882B51600E2BB70 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7CCC5DDA287D511B004E2136 /* CreateReviewViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		7CCC5DD7287D50D6004E2136 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,9 +132,8 @@
 		7CCC5DD9287D50FE004E2136 /* CreateReview */ = {
 			isa = PBXGroup;
 			children = (
+				7C16429F2882B51600E2BB70 /* View */,
 				7C07353628804A5F003E5B18 /* ViewModel */,
-				7C07353528804A59003E5B18 /* View */,
-				7CCC5DDA287D511B004E2136 /* CreateReviewViewController.swift */,
 			);
 			path = CreateReview;
 			sourceTree = "<group>";
