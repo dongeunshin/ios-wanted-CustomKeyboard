@@ -11,7 +11,7 @@ class CreateReviewViewController: UIViewController {
     
     let createReviewViewModel = CreateReviewViewModel()
     let homeViewModel = HomeViewModel(networkService: NetworkService())
-    
+    let keyboard = keyboardView()
     lazy var textfield: UITextField = {
         var textfield = UITextField()
         textfield.backgroundColor = .gray
@@ -27,22 +27,40 @@ class CreateReviewViewController: UIViewController {
             action: #selector(tapDoneButton)
         )
         setConstraints()
+        
+        keyboard.button1.addTarget(self, action: #selector(tapKeyboard(_:)), for: .touchDown)
+        keyboard.button8.addTarget(self, action: #selector(tapKeyboard(_:)), for: .touchDown)
     }
     func setConstraints() {
         view.addSubview(textfield)
+        view.addSubview(keyboard)
+        keyboard.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             textfield.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             textfield.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             textfield.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            textfield.heightAnchor.constraint(equalToConstant: 200)
+            textfield.heightAnchor.constraint(equalToConstant: 200),
+            
+            keyboard.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            keyboard.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            keyboard.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            keyboard.heightAnchor.constraint(equalToConstant: 200)
         ])
     }
-    @objc func tapDoneButton(){
+    @objc
+    func tapDoneButton(){
         guard let condent = textfield.text else { return }
         createReviewViewModel.uploadReview(condent: condent) {
             DispatchQueue.main.async {
                 self.navigationController?.popViewController(animated: true)
             }
+        }
+    }
+    @objc
+    func tapKeyboard(_ sender: UIButton){
+        let char = sender.titleLabel?.text
+        DispatchQueue.main.async {
+            self.textfield.text = char
         }
     }
 }

@@ -11,6 +11,7 @@
 		7C07353A2880583F003E5B18 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0735392880583F003E5B18 /* Observable.swift */; };
 		7C0AFCC0287D683B005F7D50 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C0AFCBF287D683B005F7D50 /* GoogleService-Info.plist */; };
 		7C0AFCC4287D6D20005F7D50 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0AFCC3287D6D20005F7D50 /* HomeViewModel.swift */; };
+		7C1642A12882B71E00E2BB70 /* keyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1642A02882B71E00E2BB70 /* keyboardView.swift */; };
 		7C4CAF4B287F08F600831121 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4CAF4A287F08F600831121 /* NetworkService.swift */; };
 		7C67A8D2287FF76400099FC2 /* reviewListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C67A8D1287FF76400099FC2 /* reviewListModel.swift */; };
 		7C67A8D728801AD300099FC2 /* ReviewTableviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C67A8D628801AD200099FC2 /* ReviewTableviewCell.swift */; };
@@ -28,6 +29,7 @@
 		7C0735392880583F003E5B18 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		7C0AFCBF287D683B005F7D50 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7C0AFCC3287D6D20005F7D50 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7C1642A02882B71E00E2BB70 /* keyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboardView.swift; sourceTree = "<group>"; };
 		7C4CAF4A287F08F600831121 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		7C67A8D1287FF76400099FC2 /* reviewListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reviewListModel.swift; sourceTree = "<group>"; };
 		7C67A8D628801AD200099FC2 /* ReviewTableviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableviewCell.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				7CCC5DDA287D511B004E2136 /* CreateReviewViewController.swift */,
+				7C1642A02882B71E00E2BB70 /* keyboardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				7C67A8D92880276800099FC2 /* ReviewModel.swift in Sources */,
 				7CCC5DDB287D511B004E2136 /* CreateReviewViewController.swift in Sources */,
 				7C0AFCC4287D6D20005F7D50 /* HomeViewModel.swift in Sources */,
+				7C1642A12882B71E00E2BB70 /* keyboardView.swift in Sources */,
 				7C4CAF4B287F08F600831121 /* NetworkService.swift in Sources */,
 				7CFC6AF7287D4E6F00DDC092 /* HomeViewController.swift in Sources */,
 			);
@@ -395,6 +399,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6Y6MSA68D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CustomKeyboard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -421,6 +426,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6Y6MSA68D;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CustomKeyboard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
