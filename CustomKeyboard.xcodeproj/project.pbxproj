@@ -13,9 +13,8 @@
 		7C0AFCC4287D6D20005F7D50 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0AFCC3287D6D20005F7D50 /* HomeViewModel.swift */; };
 		7C1642A12882B71E00E2BB70 /* keyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1642A02882B71E00E2BB70 /* keyboardView.swift */; };
 		7C4CAF4B287F08F600831121 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4CAF4A287F08F600831121 /* NetworkService.swift */; };
-		7C67A8D2287FF76400099FC2 /* reviewListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C67A8D1287FF76400099FC2 /* reviewListModel.swift */; };
+		7C67A8D2287FF76400099FC2 /* ReviewListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C67A8D1287FF76400099FC2 /* ReviewListModel.swift */; };
 		7C67A8D728801AD300099FC2 /* ReviewTableviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C67A8D628801AD200099FC2 /* ReviewTableviewCell.swift */; };
-		7C67A8D92880276800099FC2 /* ReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C67A8D82880276800099FC2 /* ReviewModel.swift */; };
 		7CCC5DDB287D511B004E2136 /* CreateReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCC5DDA287D511B004E2136 /* CreateReviewViewController.swift */; };
 		7CFC6AF7287D4E6F00DDC092 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFC6AF6287D4E6F00DDC092 /* HomeViewController.swift */; };
 		DE15E65C28604278003DD2F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE15E65B28604278003DD2F5 /* AppDelegate.swift */; };
@@ -31,9 +30,8 @@
 		7C0AFCC3287D6D20005F7D50 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7C1642A02882B71E00E2BB70 /* keyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboardView.swift; sourceTree = "<group>"; };
 		7C4CAF4A287F08F600831121 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		7C67A8D1287FF76400099FC2 /* reviewListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reviewListModel.swift; sourceTree = "<group>"; };
+		7C67A8D1287FF76400099FC2 /* ReviewListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListModel.swift; sourceTree = "<group>"; };
 		7C67A8D628801AD200099FC2 /* ReviewTableviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableviewCell.swift; sourceTree = "<group>"; };
-		7C67A8D82880276800099FC2 /* ReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewModel.swift; sourceTree = "<group>"; };
 		7CCC5DDA287D511B004E2136 /* CreateReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReviewViewController.swift; sourceTree = "<group>"; };
 		7CFC6AF6287D4E6F00DDC092 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DE15E65828604278003DD2F5 /* CustomKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,8 +56,7 @@
 		7C0735332880453A003E5B18 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7C67A8D1287FF76400099FC2 /* reviewListModel.swift */,
-				7C67A8D82880276800099FC2 /* ReviewModel.swift */,
+				7C67A8D1287FF76400099FC2 /* ReviewListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -251,11 +248,10 @@
 			files = (
 				7C07353828804A79003E5B18 /* CreateReviewViewModel.swift in Sources */,
 				7C07353A2880583F003E5B18 /* Observable.swift in Sources */,
-				7C67A8D2287FF76400099FC2 /* reviewListModel.swift in Sources */,
+				7C67A8D2287FF76400099FC2 /* ReviewListModel.swift in Sources */,
 				DE15E65C28604278003DD2F5 /* AppDelegate.swift in Sources */,
 				DE15E65E28604278003DD2F5 /* SceneDelegate.swift in Sources */,
 				7C67A8D728801AD300099FC2 /* ReviewTableviewCell.swift in Sources */,
-				7C67A8D92880276800099FC2 /* ReviewModel.swift in Sources */,
 				7CCC5DDB287D511B004E2136 /* CreateReviewViewController.swift in Sources */,
 				7C0AFCC4287D6D20005F7D50 /* HomeViewModel.swift in Sources */,
 				7C1642A12882B71E00E2BB70 /* keyboardView.swift in Sources */,

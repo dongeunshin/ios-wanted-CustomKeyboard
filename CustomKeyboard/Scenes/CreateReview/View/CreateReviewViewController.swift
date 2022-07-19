@@ -28,8 +28,8 @@ class CreateReviewViewController: UIViewController {
         )
         setConstraints()
         
-        keyboard.button1.addTarget(self, action: #selector(tapKeyboard(_:)), for: .touchDown)
-        keyboard.button8.addTarget(self, action: #selector(tapKeyboard(_:)), for: .touchDown)
+        keyboard.button1.addTarget(self, action: #selector(tapKeyboard(_:)), for: .touchDown) //0x11B8
+        keyboard.button8.addTarget(self, action: #selector(tapKeyboard(_:)), for: .touchDown) //0x1163
     }
     func setConstraints() {
         view.addSubview(textfield)
