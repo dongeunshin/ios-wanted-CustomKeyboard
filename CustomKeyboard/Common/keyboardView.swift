@@ -7,7 +7,7 @@
 
 import UIKit
 
-class keyboardView: UIView {
+class KeyboardView: UIView {
     
     let stackView1 = UIStackView()
     let stackView2 = UIStackView()
@@ -44,46 +44,21 @@ class keyboardView: UIView {
     let button29 = UIButton()
     let button30 = UIButton()
     let button31 = UIButton()
-
+    
+    lazy var buttons = [button1, button2,button3, button4, button5,
+                        button6, button7, button8, button9, button10,
+                        button11, button12, button13, button14, button15,
+                        button16, button17, button18, button19, button20,
+                        button21,button22,button23,button24,button25,
+                        button26, button27, button28, button29, button30,
+                        button31]
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .blue
+        self.backgroundColor = .clear
         setupView()
         setupConstraints()
-        
-        button1.setTitle("ㅂ", for: .normal)
-        button2.setTitle("ㅈ", for: .normal)
-        button3.setTitle("ㄷ", for: .normal)
-        button4.setTitle("ㄱ", for: .normal)
-        button5.setTitle("ㅅ", for: .normal)
-        button6.setTitle("ㅛ", for: .normal)
-        button7.setTitle("ㅕ", for: .normal)
-        button8.setTitle("ㅑ", for: .normal)
-        button9.setTitle("ㅐ", for: .normal)
-        button10.setTitle("ㅔ", for: .normal)
-        button11.setTitle("ㅁ", for: .normal)
-        button12.setTitle("ㄴ", for: .normal)
-        button13.setTitle("ㅇ", for: .normal)
-        button14.setTitle("ㄹ", for: .normal)
-        button15.setTitle("ㅎ", for: .normal)
-        button16.setTitle("ㅗ", for: .normal)
-        button17.setTitle("ㅓ", for: .normal)
-        button18.setTitle("ㅏ", for: .normal)
-        button19.setTitle("ㅣ", for: .normal)
-        button20.setTitle("A", for: .normal)
-        button21.setTitle("ㅋ", for: .normal)
-        button22.setTitle("ㅊ", for: .normal)
-        button23.setTitle("ㅍ", for: .normal)
-        button24.setTitle("ㅠ", for: .normal)
-        button25.setTitle("ㅜ", for: .normal)
-        button26.setTitle("ㅡ", for: .normal)
-        button27.setTitle("X", for: .normal)
-        button28.setTitle("123", for: .normal)
-        button29.setTitle("😊", for: .normal)
-        button30.setTitle("SPACE", for: .normal)
-        button31.setTitle("Return", for: .normal)
-        
+        setButtonTitle()
     }
 
     required init?(coder: NSCoder) {
@@ -129,23 +104,56 @@ class keyboardView: UIView {
         stackView1.topAnchor.constraint(equalTo: self.topAnchor),
         stackView1.leadingAnchor.constraint(equalTo: self.leadingAnchor),
         stackView1.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-        stackView1.heightAnchor.constraint(equalToConstant: 30),
+        stackView1.heightAnchor.constraint(equalToConstant: 55),
         
         stackView2.topAnchor.constraint(equalTo: stackView1.bottomAnchor,constant: 3),
         stackView2.leadingAnchor.constraint(equalTo: self.leadingAnchor),
         stackView2.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-        stackView2.heightAnchor.constraint(equalToConstant: 30),
+        stackView2.heightAnchor.constraint(equalToConstant: 55),
         
         stackView3.topAnchor.constraint(equalTo: stackView2.bottomAnchor,constant: 3),
         stackView3.leadingAnchor.constraint(equalTo: self.leadingAnchor),
         stackView3.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-        stackView3.heightAnchor.constraint(equalToConstant: 30),
+        stackView3.heightAnchor.constraint(equalToConstant: 55),
         
         stackView4.topAnchor.constraint(equalTo: stackView3.bottomAnchor,constant: 3),
         stackView4.leadingAnchor.constraint(equalTo: self.leadingAnchor),
         stackView4.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-        stackView4.heightAnchor.constraint(equalToConstant: 30),
+        stackView4.heightAnchor.constraint(equalToConstant: 55),
       ])
+    }
+    private func setButtonTitle(){
+        button1.setTitle("ㅂ", for: .normal)
+        button2.setTitle("ㅈ", for: .normal)
+        button3.setTitle("ㄷ", for: .normal)
+        button4.setTitle("ㄱ", for: .normal)
+        button5.setTitle("ㅅ", for: .normal)
+        button6.setTitle("ㅛ", for: .normal)
+        button7.setTitle("ㅕ", for: .normal)
+        button8.setTitle("ㅑ", for: .normal)
+        button9.setTitle("ㅐ", for: .normal)
+        button10.setTitle("ㅔ", for: .normal)
+        button11.setTitle("ㅁ", for: .normal)
+        button12.setTitle("ㄴ", for: .normal)
+        button13.setTitle("ㅇ", for: .normal)
+        button14.setTitle("ㄹ", for: .normal)
+        button15.setTitle("ㅎ", for: .normal)
+        button16.setTitle("ㅗ", for: .normal)
+        button17.setTitle("ㅓ", for: .normal)
+        button18.setTitle("ㅏ", for: .normal)
+        button19.setTitle("ㅣ", for: .normal)
+        button20.setTitle("⬆", for: .normal)
+        button21.setTitle("ㅋ", for: .normal)
+        button22.setTitle("ㅊ", for: .normal)
+        button23.setTitle("ㅍ", for: .normal)
+        button24.setTitle("ㅠ", for: .normal)
+        button25.setTitle("ㅜ", for: .normal)
+        button26.setTitle("ㅡ", for: .normal)
+        button27.setTitle("X", for: .normal)
+        button28.setTitle("123", for: .normal)
+        button29.setTitle("😊", for: .normal)
+        button30.setTitle("SPACE", for: .normal)
+        button31.setTitle("Return", for: .normal)
     }
     @objc
     func tapButtun(sender: UIButton){
